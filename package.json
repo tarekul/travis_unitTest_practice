@@ -1,0 +1,16 @@
+{
+  "name": "travis_unittest_practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "$(npm bin)/jest --coverage",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^25.4.0"
+  }
+}
