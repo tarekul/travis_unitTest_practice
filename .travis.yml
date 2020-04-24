@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "11.10.1"
+install:
+  - npm install
+before_script: -export token=$token
+script: -npm run test
+deploy:
+  provider: heroku
+  api_key: $token
+  app: radiant-bastion-59954
+  on: master
+  strategy: git
