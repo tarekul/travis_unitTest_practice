@@ -3,7 +3,7 @@ node_js:
   - "11.10.1"
 install:
   - npm install
-before_script: -export token=$token
+before_script: export token=$token
 script: -npm run test
 deploy:
   provider: heroku
